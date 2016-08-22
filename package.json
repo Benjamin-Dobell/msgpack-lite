@@ -18,9 +18,9 @@
     "Joshua Wise <josh@joshuawise.ninja>"
   ],
   "dependencies": {
-    "event-lite": "^0.1.1",
+    "event-lite": "github:benjamin-dobell/event-lite",
     "ieee754": "^1.1.6",
-    "int64-buffer": "^0.1.7",
+    "int64-buffer": "github:benjamin-dobell/int64-buffer",
     "isarray": "^1.0.0"
   },
   "devDependencies": {
@@ -30,6 +30,9 @@
     "jshint": "^2.9.2",
     "mocha": "^2.5.3",
     "msgpack.codec": "git+https://github.com/kawanet/msgpack-javascript.git#msgpack.codec",
+    "rollup": "^0.34.10",
+    "rollup-plugin-commonjs": "^3.3.1",
+    "rollup-plugin-node-resolve": "^2.0.0",
     "uglify-js": "^2.7.0",
     "zuul": "^3.10.1"
   },
@@ -58,7 +61,8 @@
     "uint8array"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/msgpack.min.js",
+  "jsnext:main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/kawanet/msgpack-lite.git"
